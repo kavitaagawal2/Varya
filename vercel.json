@@ -1,7 +1,12 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/hindi",
+      "destination": "/hindi.html"
+    },
+    {
+      "source": "/((?!hindi|server\\.js|push_to_github\\.js).*)$",
       "destination": "/index.html"
     }
   ]
